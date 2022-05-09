@@ -1,0 +1,87 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.firstColumn,
+.secondColumn {
+  width: 50vw;
+  text-align: center;
+}
+
+img {
+  width: 50vw;
+}
+
+span {
+  color: #1E90FF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+.textBlock {
+  padding: 0 30px;
+}
+
+@media (min-width: 375px) {
+  .firstRow,
+  .secondRow {
+    display: flex;
+    flex-direction: column;
+  }
+  .firstColumn,
+  .secondColumn {
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .firstRow,
+  .secondRow {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.btnDelete {
+  background-color: rgb(229, 56, 56);
+  color: #fff;
+}
+
+.btnVote {
+  background-color: rgb(23, 183, 66);
+  color: #fff;
+  height: 30px;
+  border: 1px solid rgb(124, 161, 241);
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
+.btnUnvote {
+  background-color: rgb(227, 156, 14);
+  color: #fff;
+  height: 30px;
+  border: 1px solid rgb(124, 161, 241);
+  border-radius: 13px;
+}
+
+.dataTable {
+  display: flex;
+  justify-content: space-around;
+}
+
+tr {
+  margin-bottom: 5px;
+}
